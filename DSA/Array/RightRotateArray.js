@@ -11,10 +11,10 @@ function reverseArrayDplace(arr, d){
     // }
 
 
-  //JS based code  
-    d %= arr.length;
-    let shift = arr.splice(-d); //-d means removes last 2 elements
-    arr.unshift(...shift);
+  //JS based code  T-C - O(N* D)
+    // d %= arr.length;
+    // let shift = arr.splice(d); //-d means removes last 2 elements - O(d)
+    // arr.unshift(...shift);O(n) as the all the elements shifted to right side 
     
 }
 
